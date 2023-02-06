@@ -1,0 +1,24 @@
+package com.mvc.mybatis;
+
+import org.apache.ibatis.session.SqlSession;
+
+public class Mybatis {
+	private static Mybatis instance;
+	
+	private Mybatis() {
+		String resource = "com/mvc/resource/mybatis-config.xml";
+		
+		
+	}
+	
+	public Mybatis getInstance() {
+		if(instance == null) {
+			instance = new Mybatis();
+		}
+		return instance;
+	}
+	
+	public SqlSession getSqlSession() {
+		return null;
+	}
+}

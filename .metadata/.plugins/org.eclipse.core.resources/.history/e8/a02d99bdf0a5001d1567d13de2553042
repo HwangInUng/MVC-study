@@ -1,0 +1,5 @@
+package com.mvc.controller.board;
+
+public class DetailController {
+
+}

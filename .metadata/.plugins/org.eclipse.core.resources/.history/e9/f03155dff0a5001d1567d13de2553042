@@ -1,0 +1,23 @@
+package com.mvc.controller.board;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mvc.controller.Controller;
+import com.mvc.mybatis.Mybatis;
+
+public class DetailController implements Controller{
+	Mybatis mybatis = Mybatis.getInstance();
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		
+	}
+	@Override
+	public String getViewName() {
+		return null;
+	}
+	@Override
+	public boolean isForword() {
+		return false;
+	}
+}

@@ -1,0 +1,81 @@
+package com.mvc.controller;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Properties;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class DispathcerServlet extends HttpServlet{
+	Properties props;
+	@Override
+	public void init(ServletConfig servletConfig) throws ServletException {
+		props = new Properties();
+		String realPath = servletConfig.getServletContext().getRealPath();
+		try {
+			props.load(new FileInputStream(realPath));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@Override
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doRequest(request, response);
+	}
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doRequest(request, response);
+	}
+	
+	protected void doRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+		
+		String uri = request.getRequestURI();
+		
+		String controllerPath = props.getProperty(uri);
+		//경로를 이용해 load해주는 역할
+		try {
+			//static 영역에 원본 코드를 로드하여 반환된 class를 인스턴스화
+			Class controllerClass = Class.forName(controllerPath);
+			Controller controller = (Controller)controllerClass.getDeclaredConstructor().newInstance();
+			
+			controller.execute(request, response);
+			
+			RequestDispatcher dis = request.getRequestDispatcher(controller.getViewName());
+			dis.forward(request, response);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (InstantiationException e) {
+			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		} catch (InvocationTargetException e) {
+			e.printStackTrace();
+		} catch (NoSuchMethodException e) {
+			e.printStackTrace();
+		} catch (SecurityException e) {
+			e.printStackTrace();
+		}
+		
+//		if(uri.equals("/blood.do")) {
+//			BloodController bloodController = new BloodController();
+//			view = bloodController.execute(request, response);
+//		} else if(uri.equals("/movie.do")) {
+//			MovieController movieController = new MovieController();
+//			view = movieController.handle(request, response);
+//		}
+	}
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>MVCApplication</display-name>
+  
+  <!-- 웹 어플리케이션에 모든 요청이 FrontController에 모이도록 세팅 -->
+  <servlet>
+  	<servlet-name>dispatcherServlet</servlet-name>
+  	<servlet-class></servlet-class>
+  </servlet>
+  <servlet-mapping></servlet-mapping>
+</web-app>

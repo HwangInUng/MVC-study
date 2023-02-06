@@ -1,0 +1,8 @@
+package com.mvc.model.board;
+
+import org.apache.ibatis.session.SqlSession;
+
+public class BoardDAO {
+	SqlSession session;
+	
+}

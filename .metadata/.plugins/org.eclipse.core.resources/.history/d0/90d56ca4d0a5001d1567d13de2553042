@@ -1,0 +1,11 @@
+package com.mvc.exception;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class BoardException extends RuntimeException{
+	private int code;
+	private String msg;
+}

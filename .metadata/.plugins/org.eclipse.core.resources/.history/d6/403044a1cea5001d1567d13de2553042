@@ -1,0 +1,9 @@
+package com.mvc.mybatis;
+
+public class Mybatis {
+	private static Mybatis instance;
+	
+	private Mybatis() {
+		
+	}
+}

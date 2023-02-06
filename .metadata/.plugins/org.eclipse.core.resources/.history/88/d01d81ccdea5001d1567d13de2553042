@@ -1,0 +1,28 @@
+package com.mvc.controller.board;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.mvc.controller.Controller;
+import com.mvc.model.board.BoardDAO;
+import com.mvc.mybatis.Mybatis;
+
+public class ListController implements Controller{
+	Mybatis mybatis = Mybatis.getInstance();
+	BoardDAO boardDAO = new BoardDAO();
+	
+	@Override
+	public void execute(HttpServletRequest reqeust, HttpServletResponse response) {
+		SqlSession sqlSession = mybatis.getSqlSession();
+		boardDAO.setSession(sqlSession);
+		
+		boardDAO.selectAll();
+	}
+	
+	@Override
+	public String getViewName() {
+		return null;
+	}
+}

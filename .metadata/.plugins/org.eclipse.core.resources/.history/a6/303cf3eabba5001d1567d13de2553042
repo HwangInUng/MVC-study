@@ -1,0 +1,16 @@
+package com.mvc.controller;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.mvc.model.BloodAdvisor;
+import com.mvc.model.MovieAdvisor;
+
+public class MovieController {
+	String controllerName = this.getClass().getName();
+	MovieAdvisor movieAdvisor = new MovieAdvisor();
+	
+	public void handle(HttpServletRequest request, HttpServletResponse response) {
+		String result = movieAdvisor.getAdvice(request.getParameter("movie"));
+	}
+}

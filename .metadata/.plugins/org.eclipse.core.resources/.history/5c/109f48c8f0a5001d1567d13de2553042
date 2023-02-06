@@ -1,0 +1,17 @@
+# 해당 파일 형식이 xml, json이라면 파싱이 필요
+# 일반 파일은 properties 객체 이용
+
+#controller 매핑
+/blood.do=com.mvc.controller.BloodController
+/movie.do=com.mvc.controller.MovieController
+
+#게시판관련 매핑
+/board/list.do=com.mvc.controller.board.ListController
+/board/regist.do=com.mvc.controller.board.RegistController
+/board/detail.do=com.mvc.controller.board.DetailController
+
+#view 매핑
+/blood/view=/blood/result.jsp
+/movie/view=/movie/result.jsp
+/board/view/list=/board/list.jsp
+/board/view/regist=/board/list.do

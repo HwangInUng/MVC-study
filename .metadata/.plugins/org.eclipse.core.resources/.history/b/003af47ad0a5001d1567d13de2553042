@@ -1,0 +1,5 @@
+package com.mvc.exception;
+
+public class BoardException extends RuntimeException{
+	
+}

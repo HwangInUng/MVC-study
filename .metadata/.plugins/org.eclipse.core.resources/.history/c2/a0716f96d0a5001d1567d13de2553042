@@ -1,0 +1,19 @@
+package com.mvc.model.board;
+
+import org.apache.ibatis.session.SqlSession;
+
+import com.mvc.domain.Board;
+import com.mvc.exception.BoardException;
+
+public class BoardDAO {
+	SqlSession session;
+
+	public void setSession(SqlSession session) {
+		this.session = session;
+	}
+	
+	public void insert(Board board) throws BoardException{
+		int result = session.insert("Board.insert", board);
+		
+	}
+}
