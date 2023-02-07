@@ -55,10 +55,14 @@ Board board = (Board) request.getAttribute("board");
 	
 	$(function(){
 		$("#update").on("click", function(){
-			update();
+			if(confirm("수정하시겠습니까?")){
+				update();
+			}
 		});
 		$("#delete").on("click", function(){
-			del();
+			if(confirm("정말 삭제하시겠습니까?")){
+				del();
+			}
 		});
 	});
 </script>

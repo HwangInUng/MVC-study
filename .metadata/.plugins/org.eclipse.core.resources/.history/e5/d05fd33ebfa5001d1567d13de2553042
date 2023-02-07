@@ -1,3 +1,0 @@
-# 해당 파일 형식이 xml, json이라면 파싱이 필요
-/blood.do=com.mvc.controller.BloodController
-/movie.do=com.mvc.controller.MovieController

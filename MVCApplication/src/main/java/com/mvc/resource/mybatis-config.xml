@@ -5,6 +5,8 @@
 <configuration>
 	<typeAliases>
 		<typeAlias type="com.mvc.domain.Board" alias="Board"/>
+		<typeAlias type="com.mvc.domain.Dept" alias="Dept"/>
+		<typeAlias type="com.mvc.domain.Emp" alias="Emp"/>
 	</typeAliases>
   <environments default="development">
     <environment id="development">
@@ -16,5 +18,7 @@
   </environments>
   <mappers>
     <mapper resource="com/mvc/resource/BoardMapper.xml"/>
+    <mapper resource="com/mvc/resource/DeptMapper.xml"/>
+    <mapper resource="com/mvc/resource/EmpMapper.xml"/>
   </mappers>
 </configuration>

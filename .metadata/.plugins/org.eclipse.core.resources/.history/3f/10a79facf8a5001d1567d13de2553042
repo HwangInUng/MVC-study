@@ -1,7 +1,0 @@
-package com.mvc.controller.board;
-
-import com.mvc.controller.Controller;
-
-public class UpdateController implements Controller{
-
-}

@@ -39,6 +39,7 @@ public class UpdateController implements Controller{
 		}
 		
 	}
+	
 	@Override
 	public String getViewName() {
 		return "/board/view/update";

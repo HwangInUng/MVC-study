@@ -12,11 +12,21 @@
 /board/delete.do=com.mvc.controller.board.DeleteController
 /board/update.do=com.mvc.controller.board.UpdateController
 
+#사원관련 매핑
+/emp/regist.do=com.mvc.controller.emp.RegistController
+/emp/list.do=com.mvc.controller.emp.ListController
+/emp/delete.do=com.mvc.controller.emp.DeleteController
+
 #view 매핑
 /blood/view=/blood/result.jsp
 /movie/view=/movie/result.jsp
+
 /board/view/list=/board/list.jsp
 /board/view/regist=/board/list.do
 /board/view/detail=/board/detail.jsp
 /board/view/delete=/board/list.do
 /board/view/update=/board/detail.jsp
+
+/emp/view/regist=/emp/list.do
+/emp/view/list=/emp/list.jsp
+/emp/view/delete=/emp/list.do

@@ -13,11 +13,6 @@ entityReference=\#808BED | null | null | null | null | null
 newFileTemplateName=xml declaration
 org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart.lastActivePage=1
-overriddenByCSS=,piBorder,piContent,tagAttributeEquals,tagAttributeName,
-piBorder=\#87CEFA | null | null | null | null | null
-piContent=\#CFBFAD | null | null | null | null | null
-tagAttributeEquals=\#CFBFAD | null | null | null | null | null
-tagAttributeName=\#CFBFAD | null | null | null | null | null
 tagAttributeValue=\#FFCD8B | null | null | null | null | null
 tagBorder=\#CFBFAD | null | null | null | null | null
 tagName=\#00ffa2 | null | false | false | false | false

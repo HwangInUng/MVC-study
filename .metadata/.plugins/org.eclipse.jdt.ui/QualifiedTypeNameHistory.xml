@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+    <fullyQualifiedTypeName name="com.mvc.model.BloodAdvisor"/>
+    <fullyQualifiedTypeName name="com.mvc.model.MovieAdvisor"/>
+    <fullyQualifiedTypeName name="com.mvc.controller.BloodController"/>
+    <fullyQualifiedTypeName name="com.mvc.controller.MovieController"/>
+    <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletConfig"/>
+    <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
+    <fullyQualifiedTypeName name="com.mvc.model.board.BoardDAO"/>
+    <fullyQualifiedTypeName name="com.mvc.exception.BoardException"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="com.mvc.domain.Dept"/>
+    <fullyQualifiedTypeName name="com.mvc.mybatis.Mybatis"/>
+    <fullyQualifiedTypeName name="com.mvc.model.emp.DeptDAO"/>
+    <fullyQualifiedTypeName name="com.mvc.model.emp.EmpDAO"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.mvc.controller.Controller"/>
+    <fullyQualifiedTypeName name="com.mvc.domain.Board"/>
+    <fullyQualifiedTypeName name="com.mvc.exception.EmpException"/>
+    <fullyQualifiedTypeName name="com.mvc.model.emp.EmpService"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+    <fullyQualifiedTypeName name="com.mvc.domain.Emp"/>
+    <fullyQualifiedTypeName name="com.mvc.exception.DeptException"/>
+</qualifiedTypeNameHistroy>
